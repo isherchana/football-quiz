@@ -1,0 +1,56 @@
+#football quiz (4 questions + score)
+from selectors import SelectSelector
+
+score = 0
+question1 = input("""Who scored the most Arsenal league goals?: 
+A. Theirry Henry
+B. Saka
+C. Berkamp
+Answer (A, B or C): """)
+
+if question1 == "A":
+    print("Correct!")
+    score +=1
+else:
+    print("Wrong!")
+
+question2 = input("""Who scored the most premier league goals?: 
+A. Kun Aguero
+B. Cristiano Ronaldo
+C. Alan Shearer
+Answer (A, B or C): """)
+
+if question2 == "C":
+    print("Correct!")
+    score +=1
+
+else:
+    print("Wrong!")
+
+question3 = input("""What club is commonly known as the red devils?: 
+A. Liverpool
+B. Manchester United
+C. Fulham
+Answer (A, B or C): """)
+
+if question3 == "A":
+    print("Correct!")
+    score +=1
+
+else:
+    print("Wrong!")
+
+question4 = input("""Who was the 2023/2024 ballon d'or winner?: 
+A. Messi
+B. Bukayo Saka
+C. Rodri
+Answer (A, B or C): """)
+
+if question4 == "C":
+    print("Correct!")
+    score +=1
+
+else:
+    print("Wrong!")
+
+print(f"Your score was {score} out of 4")
